@@ -1,0 +1,11 @@
+<template name="coreLayout">
+  <div>
+    {{> yield region="layoutHeader"}}
+  </div>
+  <div class="main">
+    {{> yield}}
+  </div>
+  <div>
+    {{> yield region="layoutFooter"}}
+  </div>
+</template>

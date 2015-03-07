@@ -1,0 +1,15 @@
+<template name="items">
+  <ul>
+    <li>
+      {{#each items}}
+        Title: {{title}} <br>
+        Found At: {{foundAt}}
+      {{/each}}
+    </li>
+  </ul>
+  <form>
+    Item Title:<input type="text" name="itemTitle"><br>
+    Item Found At:<input type="text" name="itemFoundAt"><br>
+    <input type="submit" value="Add Item">
+  </form>
+</template>
