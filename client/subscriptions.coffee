@@ -1,1 +1,1 @@
-items = Meteor.subscribe "items"
+FoundItems = Meteor.subscribe "FoundItems"

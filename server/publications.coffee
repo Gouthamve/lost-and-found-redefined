@@ -1,2 +1,2 @@
-Meteor.publish 'Items', ->
-  return Items.find()
+Meteor.publish 'FoundItems', ->
+  return FoundItems.find()

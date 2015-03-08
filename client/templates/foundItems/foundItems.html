@@ -1,0 +1,13 @@
+<template name="foundItems">
+  <ul>
+    {{#each items}}
+      <li>
+        Title: {{title}} <br>
+        Found At: {{foundAt}} <br>
+        Found On: {{foundOn}} <br>
+        Description: {{Description}}
+      </li>
+    {{/each}}
+  </ul>
+  {{>foundItemForm}}
+</template>
