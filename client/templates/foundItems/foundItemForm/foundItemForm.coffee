@@ -5,9 +5,14 @@ Template.foundItemForm.events
     itemFoundAt = event.target.itemFoundAt.value
     itemFoundOn = event.target.itemFoundOn.value
     itemDescription = event.target.itemDescription.value
+    createdBy = Meteor.user().profile.name
+    createdAt = new Date().toString()
+    console.log(createdAt)
     FoundItems.insert
       title: itemTitle
       foundAt: itemFoundAt
       foundOn: itemFoundOn
       description: itemDescription
+      foundBy: createdBy
+      createdAt: createdAt
     window.location.assign("http://localhost:3000")

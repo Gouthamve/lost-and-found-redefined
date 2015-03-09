@@ -1,6 +1,7 @@
 <template name="layoutHeader">
   <div>
     <h1>Welcome to the Lost and Found Page</h1>
+    {{> loginButtons}} <br>
     {{> navMenu}}
   </div>
 </template>
@@ -8,8 +9,10 @@
 <template name='navMenu'>
   <nav>
     <a href="{{pathFor 'found'}}">Found Items</a> |
-    <a href="{{pathFor 'lost'}}">Lost Items</a> |
+    <a href="{{pathFor 'lost'}}">Lost Items</a>
+    {{#if currentUser}}|
     <a href="{{pathFor 'fileLost'}}">File Lost Items</a> |
     <a href="{{pathFor 'fileFound'}}">File Found Items</a>
+    {{/if}}
   </nav>
 </template>

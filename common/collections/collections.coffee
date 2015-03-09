@@ -10,6 +10,8 @@ FoundItems.attachSchema = new SimpleSchema
     type: String
   foundBy:
     type: String
+  createdAt:
+    type: String
     
 @LostItems = new Mongo.Collection 'LostItems'
 LostItems.attachSchema = new SimpleSchema
@@ -23,3 +25,5 @@ LostItems.attachSchema = new SimpleSchema
     type: String
   lostBy:
     type: String
+  createdAt:
+    type: Date
