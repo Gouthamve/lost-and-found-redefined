@@ -1,6 +1,6 @@
 BaseController = RouteController.extend
   waitOn: ->
-    Meteor.subscribe "FoundItems"
+    Meteor.subscribe "FoundItems", "LostItems"
   layoutTemplate: "coreLayout"
   yieldTemplates:
     layoutHeader:
@@ -9,7 +9,19 @@ BaseController = RouteController.extend
       to: "layoutFooter"
 
 Router.map ->
-  @route "index",
+  @route "found",
     controller: BaseController
     path: "/"
     template: "foundItems"
+  @route "fileFound",
+    controller: BaseController
+    path: "/fileFound"
+    template: "foundItemForm"
+  @route "lost",
+    controller: BaseController
+    path: "/lost"
+    template: "lostItems"
+  @route "fileLost",
+    controller: BaseController
+    path: "/fileLost"
+    template: "lostItemForm"

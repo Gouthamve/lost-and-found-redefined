@@ -9,8 +9,5 @@ Template.foundItemForm.events
       title: itemTitle
       foundAt: itemFoundAt
       foundOn: itemFoundOn
-      Description: itemDescription
-    event.target.itemTitle.value = ""
-    event.target.itemFoundAt.value = ""
-    event.target.itemFoundOn.value = ""
-    event.target.itemDescription.value = ""
+      description: itemDescription
+    window.location.assign("http://localhost:3000")

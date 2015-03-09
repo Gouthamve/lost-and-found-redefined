@@ -6,7 +6,7 @@ FoundItems.attachSchema = new SimpleSchema
     type: String
   foundOn:
     type: Date
-  Description:
+  description:
     type: String
   foundBy:
     type: String
@@ -17,9 +17,9 @@ LostItems.attachSchema = new SimpleSchema
     type: String
   lostAt:
     type: String
-  LostOn:
+  lostOn:
     type: Date
-  Description:
+  description:
     type: String
   lostBy:
     type: String
