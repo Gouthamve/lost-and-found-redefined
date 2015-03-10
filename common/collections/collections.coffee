@@ -10,6 +10,12 @@ FoundItems.attachSchema = new SimpleSchema
     type: String
   foundBy:
     type: String
+  claimedBy:
+    type: String
+  claimedAt:
+    type: Date
+  claimDescription:
+    type: String
   createdAt:
     type: String
     

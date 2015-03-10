@@ -25,3 +25,7 @@ Router.map ->
     controller: BaseController
     path: "/fileLost"
     template: "lostItemForm"
+  @route "claimedItems",
+    controller: BaseController
+    path: "/claimedItems"
+    template: "claimedItems"

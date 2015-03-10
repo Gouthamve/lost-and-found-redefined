@@ -1,19 +1,19 @@
-<template name="foundItems">
+<template name="claimedItems">
   <ul>
     {{#each items}}
-      {{#unless claimedBy}}
-        <li class="foundItem {{selectedItem}}">
+      {{#if claimedBy}}
+        <li>
           Title: {{title}} <br>
           Found At: {{foundAt}} <br>
           Found On: {{foundOn}} <br>
           Description: {{description}} <br>
           Found By: {{foundBy}} <br>
           Created At: {{createdAt}} <br>
-          {{#if selectedItem}}
-            {{> claimedItemForm}}
-          {{/if}}
+          Claimed By: {{claimedBy}} <br>
+          Claim Description: {{claimDescription}} <br>
+          Claimed At: {{claimedAt}}
         </li>
-      {{/unless}}
+      {{/if}}
     {{/each}}
   </ul>
 </template>
